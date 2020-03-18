@@ -1,13 +1,27 @@
 ---
-title: A page for you
+title: Covid-19 News
 layout: base.njk
 ---
 
 <div class="container">
-  <h1>This is a page for you</h1>
-  <div class="vibe">You are great!</div>
-  <div class="love">
-    ❤️
-  </div>
+  <h1>Covid-19 Headlines</h1>
+  <div class="vibe"></div>
+
+  <ul>
+    {% for article in news.articles %}
+    <li>
+      <a href="{{article.url}}">
+        {{article.title}}</a>
+        <div class="meta" >
+          
+          <span class="source">{{article.source.name}}</span>
+          <span class="date">{{article.publishedAt | truncate(10, true, "") }}</span>
+         
+        </div>
+      </li>
+  
+    {% endfor %}
+  </ul>
+ 
 </div>
 <script src="/js/vibe.js"></script>

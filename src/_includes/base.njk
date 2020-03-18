@@ -4,24 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
-  <style>
-    body {
-      text-align:center;
-    }
-    div.container {
-      width:400px;
-      margin: 0 auto;
-    }
-    .love {
-      font-size: 4em;
-    }
-  </style>
+  <link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+   
 </head>
 <body>
   <header>
-    <a href="/">Your page</a> | <a href="/about">About this page of yours</a>
+    <a href="/" class="news">News</a><a href="/about" class="about">About</a>
   </header>
   {{ content | safe }}
+
+<footer>
+  <p>Made with 💜 by Leo Voon</p>
+</footer>
 </body>
 </html>
 

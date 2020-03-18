@@ -1,9 +1,11 @@
   // Bank some good vibe options
   const vibes = [
-    "...and you are awesome!",
-    "...have a wonderful day!",
-    "...and you've got this!",
-    "...and so is this puppy! 🐶"
+    "Wash your hands frequently 🖐",
+    "Maintain social distancing 👥",
+    "Avoid touching eyes, nose and mouth❗",
+    "Practice respiratory hygiene 🖐",
+    "If you have fever, cough and difficulty breathing, seek medical care early 🏥",
+    "Stay at home! 🏠"
   ];
 
    // choose a random good vibe
