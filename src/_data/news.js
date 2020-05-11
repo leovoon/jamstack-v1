@@ -3,7 +3,7 @@ require('dotenv').config()
 
 
 
-modules.export = 
+modules.export = {
     if (sessionStorage.getItem("is_reloaded"))
   async function () {
     try {
@@ -15,6 +15,6 @@ modules.export =
         console.error(error);
     }
 }
-
+}
 
 
