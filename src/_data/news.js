@@ -5,7 +5,7 @@ require('dotenv').config()
 module.exports = async function () {
     try {
         const response = await axios.get(`
-        https://newsapi.org/v2/top-headlines?country=my&apiKey=${process.env.NEWS_API_KEY}`);
+        https://newsapi.org/v2/top-headlines?q=covid&apiKey=${process.env.NEWS_API_KEY}`);
 
         return response.data
     } catch (error) {
