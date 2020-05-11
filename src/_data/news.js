@@ -3,8 +3,8 @@ require('dotenv').config()
 
 
 
-modules.export = {
-    if (sessionStorage.getItem("is_reloaded"))
+modules.export = 
+   
   async function () {
     try {
         const response = await axios.get(`
@@ -15,6 +15,6 @@ modules.export = {
         console.error(error);
     }
 }
-}
+
 
 
